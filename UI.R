@@ -8,10 +8,11 @@ shinyUI(fluidPage(
 
   # Sidebar panel for inputs ----
   sidebarPanel(
-    textInput("esr", "Enter Your Erythrocyte Sedimentation Rate (ESR):"),
-    textInput("age", "Enter Your Age:"),
-    textInput("length", "Enter Your Length:"),
-    textInput("na", "Enter Your Soidum level (Na):"),
+    numericInput("esr", "Enter Your Erythrocyte Sedimentation Rate (ESR): (1-90)"),
+    numericInput("age", "Enter Your Age: (30-86)"),
+    numericInput("length", "Enter Your Length:"),
+    numericInput("na", "Enter Your Soidum level (Na): (128-156)"),
+    
     
     
     radioButtons("dm", "Do You Have Diabetes Mellitus (DM):", choices = c("Yes", "No"), selected = "Yes"),
@@ -24,10 +25,10 @@ shinyUI(fluidPage(
     # Main panel for displaying outputs ----
     mainPanel(
       # Output: Formatted text for caption ----
-      textOutput("esr_output"),
-      textOutput("age_output"),
-      textOutput("length_output"),
-      textOutput("na_output"),
+      numericInput("esr_output"),
+      numericInput("age_output"),
+      numericInput("length_output"),
+      numericInput("na_output"),
       textOutput("dm_output")
     )
   )
