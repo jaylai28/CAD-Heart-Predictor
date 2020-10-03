@@ -145,4 +145,5 @@ c1
 #                                            `Systolic.Murmur`,BMI,HDL,Neut,Edema,`EX.Smoker`,LVH,`Exertional.CP`,
 #                                            `LowTH.Ang`))
 
+saveRDS(rf, file = "./rf.rda")
 
