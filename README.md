@@ -1,6 +1,8 @@
 # FIT3164-CAD-Project
 The aim of this project is to create a predictive model using patient features to analyze and predict the occurrence of coronary artery disease (CAD) and identify the predictors with the most impact. This is achieved through the use of machine learning algorithms and a user-friendly website created using R Shiny. The website allows users to input health information and receive a prediction on whether they are likely to have CAD or not. The goal of the project is to provide a cheaper and more efficient solution to identify CAD within patients, as it is currently detected through expensive and hard to obtain x-rays.
 
+'CAD Heart Disease.R' is used to analysis the data, cleaning the data, compare and evaluate different classifiers; Sever.R is used to connect the choosed classifier to the userinterface(UI.R) ; UI.R is userinterface; When variables entry in the userinterface, the choosed classifier in the server will do the prediction.
+
 Neural Network model was used and created using the top 10 variables. The accuracy of the model was tested by splitting the dataset into training and testing sets and running the model 50 times. The results showed an average accuracy of 85% with a range between 81% and 90%. The model was also tested with a different dataset, and it produced an accuracy of 83%. The code was designed to be robust and applicable to various datasets with similar features. Overall, the predictive model can accurately predict CAD and can be applied to different datasets.
 
 
